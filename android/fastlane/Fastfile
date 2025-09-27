@@ -36,7 +36,7 @@ platform :android do
     firebase_app_distribution(
       app: "1:953262432976:android:e4bee7bc51470e6ecd74d5",
       apk_path: "../build/app/outputs/flutter-apk/app-release.apk",
-      testers: "alpoplast2@gmail.com",
+      testers: "tester-email@email.com",
       release_notes: "New beta build with latest features and bug fixes"
     )
   end
