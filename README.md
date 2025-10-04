@@ -1,5 +1,4 @@
 # BitPulse
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/karimMohammed912-gif/BitPulse)
 
 BitPulse is a comprehensive cryptocurrency tracking application built with Flutter. It provides real-time data, detailed charts, and portfolio management features to help users monitor the dynamic world of digital currencies.
 
