@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/settingsComponents/clear_cache_dialog.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/settingsComponents/clear_data_dialog.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/cubit/home_cubit_cubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,8 +15,8 @@ class DataMangmentCard extends StatelessWidget {
         children: [
           ListTile(
             leading: const Icon(Icons.storage, color: Colors.orange),
-            title: const Text('Clear Cache'),
-            subtitle: const Text('Clear app cache data'),
+            title:  Text(AppLocalizations.of(context).clear_cache),
+            subtitle:  Text(AppLocalizations.of(context).Clear_app_cache_data),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
             onTap: () => showDialog(
               context: context,
@@ -27,8 +28,8 @@ class DataMangmentCard extends StatelessWidget {
           const Divider(height: 1),
           ListTile(
             leading: const Icon(Icons.delete_forever, color: Colors.red),
-            title: const Text('Clear All Data'),
-            subtitle: const Text('Reset app to default'),
+            title:  Text(AppLocalizations.of(context).Clear_All_Data),
+            subtitle:  Text(AppLocalizations.of(context).Reset_app_to_default),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
             onTap: () => showDialog(
               context: context,

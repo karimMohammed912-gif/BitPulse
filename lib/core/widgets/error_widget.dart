@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class FaildWidget extends StatelessWidget {
@@ -29,7 +30,7 @@ class FaildWidget extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Something went wrong',
+                    AppLocalizations.of(context).Something_went_wrong,
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

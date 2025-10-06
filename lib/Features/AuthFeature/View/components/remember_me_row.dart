@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class RememberMeRow extends StatelessWidget {
@@ -32,8 +33,8 @@ class RememberMeRow extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
-            const Text(
-              'Remember me',
+             Text(
+             AppLocalizations.of(context).rememberMe,
               style: TextStyle(fontSize: 14, color: Colors.black87),
             ),
           ],

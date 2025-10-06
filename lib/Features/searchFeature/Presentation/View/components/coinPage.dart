@@ -1,4 +1,5 @@
 import 'package:bitpulse/Features/searchFeature/Presentation/Cubit/searchCubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -27,7 +28,7 @@ class SearchInputWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             borderSide: BorderSide(color:Colors.green.shade50),
           ),
-          labelText: 'Search',
+          labelText: AppLocalizations.of(context).Search,
           labelStyle: TextStyle(color: Colors.green.shade700),
           hintStyle: TextStyle(color:Colors.grey[600]),
           hintText: 'Search any coin (name, symbol)',

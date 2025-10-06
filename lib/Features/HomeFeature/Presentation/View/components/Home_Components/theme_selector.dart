@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/settingsComponents/theme_widget.dart';
 import 'package:bitpulse/core/Themes/theme.dart';
 import 'package:bitpulse/core/Themes/theme_cubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,8 +21,8 @@ class ThemeSelectorWidget extends StatelessWidget {
               children: [
                 Icon(Icons.palette, color: Theme.of(context).primaryColor),
                 const SizedBox(width: 8),
-                const Text(
-                  'App Theme',
+                 Text(
+                 AppLocalizations.of(context).App_Theme,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -36,7 +37,7 @@ class ThemeSelectorWidget extends StatelessWidget {
                   'ThemeSelector BlocBuilder rebuilt with: ${state.themeName}',
                 );
                 return Text(
-                  'Current: ${state.themeName}',
+                  '${AppLocalizations.of(context).Current}: ${state.themeName}',
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.grey[600],

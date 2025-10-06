@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/widgets/custom_toast.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class ClearCacheDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Clear Cache'),
+      title:  Text(AppLocalizations.of(context).clear_cache),
       content: const Text('This will clear cached data but keep your settings and favorites.'),
       actions: [
         TextButton(
@@ -20,9 +21,9 @@ class ClearCacheDialog extends StatelessWidget {
           onPressed: () async {
             Navigator.of(context).pop();
             // Clear cache logic here
-            buildSuccesMessage(context, 'Cache cleared successfully');
+            buildSuccesMessage(context, AppLocalizations.of(context).Cache_cleared_successfully);
           },
-          child: const Text('Clear'),
+          child:  Text(AppLocalizations.of(context).Clear_All),
         ),
       ],
     );

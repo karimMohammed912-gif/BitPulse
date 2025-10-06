@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class LoadingScrollWidget extends StatelessWidget {
@@ -8,7 +9,7 @@ class LoadingScrollWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SliverToBoxAdapter(
+    return  SliverToBoxAdapter(
       child: Padding(
         padding: EdgeInsets.all(16.0),
         child: Center(
@@ -27,7 +28,7 @@ class LoadingScrollWidget extends StatelessWidget {
               ),
               SizedBox(width: 12),
               Text(
-                'Loading more...',
+                AppLocalizations.of(context).loading,
                 style: TextStyle(color: AppColors.grey, fontSize: 14),
               ),
             ],

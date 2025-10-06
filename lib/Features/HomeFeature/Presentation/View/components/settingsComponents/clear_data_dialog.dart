@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ClearDataDialog extends StatefulWidget {
@@ -18,16 +19,16 @@ class _ClearDataDialogState extends State<ClearDataDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Clear All Data'),
+      title:  Text(AppLocalizations.of(context).Clear_All_Data),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text(
-            'This will reset the app to default settings and clear all data. This action cannot be undone.',
+           Text(
+            AppLocalizations.of(context).this_will_reset_the_app_to_default_settings_and_clear_all_data_this_action_cannot_be_undone,
           ),
           if (_isClearing) ...[
             const SizedBox(height: 16),
-            const Row(
+             Row(
               children: [
                 SizedBox(
                   width: 20,
@@ -35,7 +36,7 @@ class _ClearDataDialogState extends State<ClearDataDialog> {
                   child: CircularProgressIndicator(strokeWidth: 2),
                 ),
                 SizedBox(width: 12),
-                Text('Clearing data...'),
+                Text(AppLocalizations.of(context).Clearing_data),
               ],
             ),
           ],
@@ -44,7 +45,7 @@ class _ClearDataDialogState extends State<ClearDataDialog> {
       actions: [
         TextButton(
           onPressed: _isClearing ? null : () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child:  Text(AppLocalizations.of(context).cancel),
         ),
         TextButton(
           onPressed: _isClearing ? null : () async {
@@ -58,12 +59,12 @@ class _ClearDataDialogState extends State<ClearDataDialog> {
               if (mounted) {
                 setState(() => _isClearing = false);
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Error: $e')),
+                  SnackBar(content: Text(AppLocalizations.of(context).Error_ + e.toString())),
                 );
               }
             }
           },
-          child: const Text('Clear All', style: TextStyle(color: Colors.red)),
+          child:  Text(AppLocalizations.of(context).Clear_All, style: TextStyle(color: Colors.red)),
         ),
       ],
     );

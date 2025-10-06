@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class BuildEmptyState extends StatelessWidget {
@@ -16,7 +17,7 @@ class BuildEmptyState extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'No items found',
+           AppLocalizations.of(context).No_items_found,
             style: TextStyle(
               fontSize: 18,
               color: Colors.grey.withOpacity(0.7),

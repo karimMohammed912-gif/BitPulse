@@ -1,4 +1,5 @@
 import 'package:bitpulse/Features/AuthFeature/Cubit/auth_cubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/utils/star_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,14 +12,14 @@ class LogoutDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Logout'),
-      content: const Text('Are you sure you want to logout?'),
+      title:  Text(AppLocalizations.of(context).logout),
+      content:  Text(AppLocalizations.of(context).are_you_sure_you_want_to_logout),
       actions: [
         TextButton(
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: const Text('Cancel'),
+          child:  Text(AppLocalizations.of(context).cancel),
         ),
         TextButton(
           onPressed: () async {
@@ -30,8 +31,8 @@ class LogoutDialog extends StatelessWidget {
             // Sign out
             context.read<AuthCubit>().signOut();
           },
-          child: const Text(
-            'Logout',
+          child:  Text(
+            AppLocalizations.of(context).logout,
             style: TextStyle(color: Colors.red),
           ),
         ),

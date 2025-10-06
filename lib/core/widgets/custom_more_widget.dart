@@ -16,7 +16,7 @@ final GestureTapCallback? onTap;
           text,
           style: TextStyle(
             color: context.textColor,
-            fontSize: 18,
+            fontSize: 14,
             fontWeight: FontWeight.bold,
           ),
         ),

@@ -5,6 +5,7 @@ import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/Home_
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/Home_Components/loading_scroll_widget.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/cubit/home_cubit_cubit.dart';
 import 'package:bitpulse/core/extension/item_animation.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/utils/star_service.dart';
 import 'package:bitpulse/core/widgets/custom_more_widget.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/watch_list_home_view.dart';
@@ -91,7 +92,7 @@ class _HomeBodySuccessState extends State<HomeBodySuccess> {
 
           // My Stars List Header
           SliverToBoxAdapter(
-            child: CustomMoreWidget(text: 'My Stars List', onTap: () {}),
+            child: CustomMoreWidget(text: AppLocalizations.of(context).my_stars_List, onTap: () {}),
           ),
 
           const SliverToBoxAdapter(child: SizedBox(height: 16)),
@@ -107,7 +108,7 @@ class _HomeBodySuccessState extends State<HomeBodySuccess> {
           SliverToBoxAdapter(
             child: CustomMoreWidget(
               text:
-                  'Crypto List (${cryptoData.length}/${context.read<HomeCubit>().totalCount})',
+                  '${AppLocalizations.of(context).Crypto_List} (${cryptoData.length}/${context.read<HomeCubit>().totalCount})',
               onTap: () {},
             ),
           ),

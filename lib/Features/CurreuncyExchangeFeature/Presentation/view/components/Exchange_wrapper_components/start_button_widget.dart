@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/extension/theme_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class StartButtonWidget extends StatelessWidget {
@@ -30,7 +31,7 @@ class StartButtonWidget extends StatelessWidget {
             Icon(Icons.play_arrow, size: 24),
             const SizedBox(width: 12),
             Text(
-              'Start Exchange',
+              AppLocalizations.of(context).start_exchanging,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

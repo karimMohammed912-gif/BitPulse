@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
@@ -7,22 +8,22 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items:  <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            label: AppLocalizations.of(context).Home,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.currency_exchange_rounded),
-            label: 'Exchange',
+            label: AppLocalizations.of(context).Exchange,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search_outlined),
-            label: 'search',
+            label: AppLocalizations.of(context).Search,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings_outlined),
-            label: 'settings',
+            label: AppLocalizations.of(context).Settings,
           ),
         ],
         currentIndex: selectedIndex,

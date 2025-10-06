@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/HomeFeature/Data/Model/starred_crypto/starred_crypto.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/crypto_Item_widget.dart';
 import 'package:bitpulse/core/extension/item_animation.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 
 import 'package:flutter/material.dart';
 
@@ -16,14 +17,14 @@ class WatchListViewHome extends StatelessWidget {
         child: Card(
           child: SizedBox(
             height: 120,
-            child: const Center(
+            child:  Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.star_border, size: 40, color: Colors.grey),
                   SizedBox(height: 8),
                   Text(
-                    'No favorites yet',
+                   AppLocalizations.of(context).No_favorites_yet,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14,
@@ -32,7 +33,7 @@ class WatchListViewHome extends StatelessWidget {
                   ),
                   SizedBox(height: 4),
                   Text(
-                    'Tap the star icon on any crypto to add it here',
+                    AppLocalizations.of(context).tap_the_star_icon_on_a_crypto_to_add_it_to_your_favorites,
                     style: TextStyle(color: Colors.grey, fontSize: 12),
                     textAlign: TextAlign.center,
                   ),

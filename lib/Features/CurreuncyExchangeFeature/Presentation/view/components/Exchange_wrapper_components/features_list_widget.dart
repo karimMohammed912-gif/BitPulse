@@ -1,5 +1,6 @@
 import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/components/Exchange_wrapper_components/feature_item_widget.dart';
 import 'package:bitpulse/core/extension/theme_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class FeaturesListWidget extends StatelessWidget {
@@ -10,19 +11,18 @@ class FeaturesListWidget extends StatelessWidget {
     final features = [
       {
         'icon': Icons.speed,
-        'title': 'Real-time Rates',
-        'description': 'Get live exchange rates for accurate conversions',
-      },
+        'title': AppLocalizations.of(context).Real_time_Rates,
+        'description': AppLocalizations.of(context).Get_real_time_exchange_rates_for_a_wide_range_of_cryptocurrencies,},
 
       {
         'icon': Icons.swap_horiz,
-        'title': 'Easy Swapping',
-        'description': 'Quickly swap between different cryptocurrencies',
+        'title': AppLocalizations.of(context).easy_Swapping,
+        'description': AppLocalizations.of(context).Quickly_swap_between_different_cryptocurrencies,
       },
       {
         'icon': Icons.calculate,
-        'title': 'Precise Calculation',
-        'description': 'Accurate calculations with detailed breakdown',
+        'title': AppLocalizations.of(context).precise_Calculations,
+        'description': AppLocalizations.of(context).Perform_accurate_currency_conversions_with_advanced_calculation_tools,
       },
     ];
 
@@ -35,7 +35,7 @@ class FeaturesListWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Features',
+              AppLocalizations.of(context).features,
               style: context.title?.copyWith(
                 color: context.textColor,
                 fontWeight: FontWeight.bold,

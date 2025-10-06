@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/components/Home_Components/home_body_success.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/cubit/market_cap_data_cubit.dart';
 import 'package:bitpulse/core/extension/theme_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -42,7 +43,7 @@ class HeroSection extends StatelessWidget {
         CircularProgressIndicator(color: context.primaryColor),
         const SizedBox(height: 16),
         Text(
-          'Loading Market Data...',
+          AppLocalizations.of(context).loading_market_data,
           style: TextStyle(color: context.textColor),
         ),
       ],
@@ -55,7 +56,7 @@ class HeroSection extends StatelessWidget {
         Icon(Icons.error, size: 48, color: Theme.of(context).colorScheme.error),
         const SizedBox(height: 16),
         Text(
-          'Error loading market data',
+          AppLocalizations.of(context).Error_loading_market_data,
           style: TextStyle(
             color: context.textColor,
             fontWeight: FontWeight.bold,
@@ -84,7 +85,7 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         Text(
-          'Global Market Cap',
+          AppLocalizations.of(context).Global_market_cap,
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -93,7 +94,7 @@ class HeroSection extends StatelessWidget {
         ),
 
         Text(
-          isPositive ? 'is Up' : ' is Down',
+          isPositive ? AppLocalizations.of(context).is_up  : AppLocalizations.of(context).is_down,
           style: TextStyle(
             fontSize: 32,
             fontWeight: FontWeight.bold,
@@ -109,7 +110,7 @@ class HeroSection extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text('24h Change', style: TextStyle(color: context.secondaryTextColor)),
+        Text(AppLocalizations.of(context).change_24h, style: TextStyle(color: context.secondaryTextColor)),
       ],
     );
   }

@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/components/Exchange_wrapper_components/features_list_widget.dart';
 import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/components/Exchange_wrapper_components/start_button_widget.dart';
 import 'package:bitpulse/core/extension/theme_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class StartExchangeWidget extends StatelessWidget {
@@ -25,7 +26,7 @@ class StartExchangeWidget extends StatelessWidget {
             
             // Title
             Text(
-              'Currency Exchange',
+              AppLocalizations.of(context).currency_exchange,
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -38,7 +39,7 @@ class StartExchangeWidget extends StatelessWidget {
             
             // Description
             Text(
-              'Convert between different cryptocurrencies\nwith real-time exchange rates',
+              AppLocalizations.of(context).Convert_between_different_cryptocurrencieswith_real_time_exchange_rates,
               style: context.body?.copyWith(
                 color: context.secondaryTextColor,
                 fontSize: 16,

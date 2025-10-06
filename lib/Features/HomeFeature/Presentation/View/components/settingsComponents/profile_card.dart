@@ -1,5 +1,6 @@
 import 'package:bitpulse/Features/AuthFeature/Cubit/auth_cubit.dart';
 import 'package:bitpulse/Features/AuthFeature/Cubit/auth_state.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -31,7 +32,7 @@ class ProfileCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'User ID: ${state.userId.substring(0, 8)}...',
+                    '${AppLocalizations.of(context).userid}: ${state.userId.substring(0, 8)}...',
                     style: const TextStyle(
                       fontSize: 12,
                       color: Colors.grey,

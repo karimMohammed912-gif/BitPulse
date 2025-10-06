@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class LoadingWidget extends StatelessWidget {
@@ -7,8 +8,7 @@ class LoadingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -17,11 +17,8 @@ class LoadingWidget extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'Loading cryptocurrency data...',
-              style: TextStyle(
-
-                fontSize: 16,
-              ),
+              AppLocalizations.of(context).loading,
+              style: TextStyle(fontSize: 16),
             ),
           ],
         ),

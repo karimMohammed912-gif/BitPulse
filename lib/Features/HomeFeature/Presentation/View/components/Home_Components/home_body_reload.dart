@@ -1,5 +1,6 @@
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/cubit/home_cubit_cubit.dart';
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -18,8 +19,8 @@ class HomeBodyReload extends StatelessWidget {
             color: AppColors.grey,
           ),
           const SizedBox(height: 16),
-          const Text(
-            'No data available',
+           Text(
+            AppLocalizations.of(context).No_data_available,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
@@ -27,8 +28,8 @@ class HomeBodyReload extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Tap to load cryptocurrency data',
+           Text(
+            AppLocalizations.of(context).Tap_to_load_cryptocurrency_data,
             style: TextStyle(
               fontSize: 14,
               color: AppColors.grey,
@@ -40,7 +41,7 @@ class HomeBodyReload extends StatelessWidget {
               context.read<HomeCubit>().loadCryptoData();
             },
             icon: const Icon(Icons.refresh),
-            label: const Text('Load Data'),
+            label:  Text(AppLocalizations.of(context).Load_Data),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.primary,
               foregroundColor: AppColors.textDark,

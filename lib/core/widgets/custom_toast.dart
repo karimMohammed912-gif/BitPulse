@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 @override
@@ -7,7 +8,7 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> buildErrorMessage(
 ) {
   return ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
-      content: Text('Error: $message'),
+      content: Text('${AppLocalizations.of(context).Error_} $message'),
       backgroundColor: Colors.red,
     ),
   );
