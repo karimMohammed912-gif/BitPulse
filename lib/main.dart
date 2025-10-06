@@ -12,12 +12,12 @@ void main() async {
   // Initialize dependency injection
   setup();
   // Load environment variables
-  await dotenv.load(fileName: ".env"); 
+  await dotenv.load(fileName: ".env");
   // Initialize Hive and StarService
   await Hive.initFlutter();
   await StarService.init();
   // Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  
+
   runApp(const BitPulse());
 }
