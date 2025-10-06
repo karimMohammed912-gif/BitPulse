@@ -13,7 +13,7 @@ class SwichLink extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(title, style: TextStyle(fontSize: 14, color: Colors.grey)),
+          Text(title, style: TextStyle(fontSize: 12, color: Colors.grey)),
           TextButton(
             onPressed: onPressed,
             style: TextButton.styleFrom(
@@ -22,7 +22,7 @@ class SwichLink extends StatelessWidget {
             child: Text(
               action,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 12,
                 color: AppColors.primary,
                 fontWeight: FontWeight.w600,
               ),

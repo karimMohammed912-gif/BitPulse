@@ -50,6 +50,23 @@ void _init() {
     );
   }
 
+  // Google sign-in
+  Future<void> signInWithGoogle() async {
+    emit(const AuthLoading());
+    final result = await FirebaseAuthService.signInWithGoogle();
+    result.fold(
+      (failure) => emit(AuthError(failure.message)),
+      (user) => {
+        // State will be updated via auth state listener
+      },
+    );
+  }
+
+  void signInWithFacebook() {
+    emit(const AuthLoading());
+    emit(const AuthError('Facebook sign-in not configured yet'));
+  }
+
  Future<void> signOut() async {
   print('🔄 Starting logout...');
   emit(const AuthLoading());

@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class LoginWelcomeSection extends StatelessWidget {
@@ -10,8 +11,8 @@ class LoginWelcomeSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 20),
-        const Text(
-          'Welcome Back!',
+         Text(
+         AppLocalizations.of(context).welcomeBack,
           style: TextStyle(
             fontSize: 32,
             fontWeight: FontWeight.bold,
@@ -20,8 +21,8 @@ class LoginWelcomeSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        const Text(
-          'Sign in to continue your crypto journey',
+         Text(
+         AppLocalizations.of(context).signInToContinueYourCryptoJourney,
           style: TextStyle(
             fontSize: 16,
             color: Colors.grey,

@@ -1,5 +1,6 @@
 import 'package:bitpulse/Features/HomeFeature/Data/Model/crypto_item_list/crypto_item_list.dart';
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 
@@ -76,7 +77,7 @@ class _FavoriteStarWidgetState extends State<FavoriteStarWidget>
     });
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(isSelected ? 'Added to Stars List' : 'Removed from Stars List'),
+        content: Text(isSelected ? AppLocalizations.of(context).added_to_StarsList : AppLocalizations.of(context).removed_from_StarsList),
         backgroundColor: isSelected ? AppColors.primary : AppColors.error,
         duration: const Duration(seconds: 1),
       ),

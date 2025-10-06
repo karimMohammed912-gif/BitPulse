@@ -2,6 +2,8 @@ import 'package:bitpulse/Features/AuthFeature/Cubit/auth_cubit.dart';
 import 'package:bitpulse/Features/AuthFeature/Cubit/auth_state.dart';
 import 'package:bitpulse/Features/AuthFeature/View/components/login_button.dart';
 import 'package:bitpulse/Features/AuthFeature/View/components/sign_up_link.dart';
+import 'package:bitpulse/Features/AuthFeature/View/components/social_login_buttons.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/widgets/custom_text_filed.dart';
 import 'package:bitpulse/core/widgets/custom_toast.dart';
 import 'package:flutter/material.dart';
@@ -73,8 +75,8 @@ class LoginFormSection extends StatelessWidget {
 
             // Email Field
             CustomTextField(
-              label: 'Email Address',
-              hintText: 'Enter your email',
+              label: AppLocalizations.of(context).email,
+              hintText: AppLocalizations.of(context).enterYourEmail,
               controller: emailController,
               keyboardType: TextInputType.emailAddress,
               textInputAction: TextInputAction.next,
@@ -86,8 +88,8 @@ class LoginFormSection extends StatelessWidget {
 
             // Password Field
             CustomTextField(
-              label: 'Password',
-              hintText: 'Enter your password',
+              label: AppLocalizations.of(context).password,
+              hintText: AppLocalizations.of(context).enterYourPassword,
               controller: passwordController,
               obscureText: obscurePassword,
               textInputAction: TextInputAction.done,
@@ -119,6 +121,13 @@ class LoginFormSection extends StatelessWidget {
               action: switchLinkAction,
               onPressed: onPressed,
             ),
+
+          const SizedBox(height: 24),
+          Row(children: const [Expanded(child: Divider()), SizedBox(width: 8), Text('or'), SizedBox(width: 8), Expanded(child: Divider())]),
+          const SizedBox(height: 16),
+
+          // Social Login Buttons
+         SocialLoginButtons(onGooglePressed: () {  context.read<AuthCubit>().signInWithGoogle(); }, onFacebookPressed: () {  context.read<AuthCubit>().signInWithFacebook(); },),
           ],
         ),
       ),

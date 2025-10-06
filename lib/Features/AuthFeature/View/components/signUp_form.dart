@@ -4,6 +4,7 @@ import 'package:bitpulse/Features/AuthFeature/View/components/login_button.dart'
 import 'package:bitpulse/Features/AuthFeature/View/components/sign_up_link.dart';
 
 import 'package:bitpulse/core/extension/routes_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/widgets/custom_text_filed.dart';
 import 'package:bitpulse/core/widgets/custom_toast.dart';
 import 'package:flutter/material.dart';
@@ -74,8 +75,8 @@ class SignUpFormSection extends StatelessWidget {
 
             // Email Field
            CustomTextField(
-                    label: 'Username ',
-                    hintText: 'Enter your Name',
+                    label: AppLocalizations.of(context).username,
+                    hintText: AppLocalizations.of(context).enterYourUsername,
                     controller: userController,
                     keyboardType: TextInputType.name,
                     textInputAction: TextInputAction.next,
@@ -86,8 +87,8 @@ class SignUpFormSection extends StatelessWidget {
 
             // Email Field
             CustomTextField(
-              label: 'Email Address',
-              hintText: 'Enter your email',
+              label: AppLocalizations.of(context).email,
+              hintText: AppLocalizations.of(context).enterYourEmail,
               controller: emailController,
               keyboardType: TextInputType.emailAddress,
               textInputAction: TextInputAction.next,
@@ -99,8 +100,8 @@ class SignUpFormSection extends StatelessWidget {
 
             // Password Field
             CustomTextField(
-              label: 'Password',
-              hintText: 'Enter your password',
+              label: AppLocalizations.of(context).password,
+              hintText: AppLocalizations.of(context).enterYourPassword,
               controller: passwordController,
               obscureText: obscurePassword,
               textInputAction: TextInputAction.done,

@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -7,7 +8,6 @@ class CustomButton extends StatelessWidget {
   final bool isLoading;
 
   const CustomButton({
-    
     super.key,
     required this.onPressed,
     this.text = 'Sign In',
@@ -74,7 +74,7 @@ class SignUpFormSection extends StatelessWidget {
                 valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
               ),
             )
-          : Text('Sign Up'),
+          : Text(AppLocalizations.of(context).signUp),
     );
   }
 }

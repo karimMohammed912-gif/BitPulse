@@ -1,6 +1,7 @@
 import 'package:bitpulse/Features/AuthFeature/Cubit/auth_cubit.dart';
 import 'package:bitpulse/Features/AuthFeature/View/components/login_form_section.dart';
 import 'package:bitpulse/Features/AuthFeature/View/components/login_welcome_section.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -54,40 +55,75 @@ class _LoginViewState extends State<LoginView> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(height: 40),
-              // Welcome Section
-              const LoginWelcomeSection(),
-              const SizedBox(height: 20),
-
-              // Form Section
-              LoginFormSection(
-                formKey: _formKey,
-                emailController: _emailController,
-                passwordController: _passwordController,
-                obscurePassword: _obscurePassword,
-                rememberMe: _rememberMe,
-                onTogglePasswordVisibility: _togglePasswordVisibility,
-                onToggleRememberMe: _toggleRememberMe,
-                onSignIn: _handleSignIn,
-                title: 'Sign In',
-                isLogin: true,
-                swichLinkTitle: "Don't Have An Account?",
-                switchLinkAction: "Sign Up",
-                onPressed: () {
-                  context.go('/signUp');
-                },
-                userController: _userController,
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0xFFF7F8FA),
+                Color(0xFFFFFFFF),
+              ],
+            ),
+          ),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 24.0),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 520),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.04),
+                        blurRadius: 20,
+                        offset: const Offset(0, 8),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 8),
+                      Center(
+                        child: Image.asset(
+                          'assets/App_logo.png',
+                          height: 150,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      const LoginWelcomeSection(),
+                      const SizedBox(height: 8),
+                      LoginFormSection(
+                        formKey: _formKey,
+                        emailController: _emailController,
+                        passwordController: _passwordController,
+                        obscurePassword: _obscurePassword,
+                        rememberMe: _rememberMe,
+                        onTogglePasswordVisibility: _togglePasswordVisibility,
+                        onToggleRememberMe: _toggleRememberMe,
+                        onSignIn: _handleSignIn,
+                        title: AppLocalizations.of(context).signIn,
+                        isLogin: true,
+                        swichLinkTitle: AppLocalizations.of(context).dontHaveAnAccount,
+                        switchLinkAction: AppLocalizations.of(context).signUp,
+                        onPressed: () {
+                          context.go('/signUp');
+                        },
+                        userController: _userController,
+                      ),
+                      const SizedBox(height: 16),
+                      //  SocialLoginButtons(onGooglePressed: () {  }, onFacebookPressed: () {  },),
+              
+                 
+                    ],
+                  ),
+                ),
               ),
-
-              const SizedBox(height: 20),
-
-              const SizedBox(height: 40),
-            ],
+            ),
           ),
         ),
       ),
