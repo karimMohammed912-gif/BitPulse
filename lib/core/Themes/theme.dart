@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class AppThemes {
@@ -161,10 +162,21 @@ class AppThemes {
       default:
         return main;
     }
+  }  static List<String> getThemeNames(BuildContext context) {
+
+    return [
+     AppLocalizations.of(context).Default,
+     AppLocalizations.of(context).Bitcoin_Orange,
+     AppLocalizations.of(context).Ethereum_Blue,
+     AppLocalizations.of(context).Classic_Dark,
+     AppLocalizations.of(context).Minimal_Light,
+     AppLocalizations.of(context).purple_crypto,
+    ];
   }
 
   // --- Get All Available Themes ---
-  static Map<String, ThemeData> getAllThemes() {
+  static Map<String, ThemeData> getAllThemes(BuildContext context) {
+    // Use static, non-translated keys for identification
     return {
       'Default': main,
       'Bitcoin Orange': bitcoinTheme,
@@ -176,15 +188,6 @@ class AppThemes {
   }
 
   // --- Theme Names List ---
-  static List<String> getThemeNames() {
-    return [
-      'Default',
-      'Bitcoin Orange',
-      'Ethereum Blue',
-      'Classic Dark',
-      'Minimal Light',
-      'Purple Crypto',
-    ];
-  }
+
 }
 

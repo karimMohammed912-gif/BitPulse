@@ -113,5 +113,11 @@
   "App_Theme": "مظهر التطبيق",
   "Current": "الحالي",
   "Version": "الإصدار :1.0.0",
-  "Build": "البناء :001"
+  "Build": "البناء :001",
+  "Default_Desc": "مظهر أخضر احترافي",
+  "Bitcoin_Orange_Desc": "ألوان برتقالية كلاسيكية لبيتكوين",
+  "Ethereum_Blue_Desc": "سمة زرقاء مستوحاة من إيثيريوم",
+  "Classic_Dark_Desc": "سمة داكنة بتصميم مادي",
+  "Minimal_Light_Desc": "سمة فاتحة نظيفة وبسيطة",
+  "purple_crypto_Desc": "سمة كريبتو بنفسجية حديثة"
 }

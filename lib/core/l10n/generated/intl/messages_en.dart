@@ -31,12 +31,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "App_Theme": MessageLookupByLibrary.simpleMessage("App Theme"),
         "Bitcoin_Orange":
             MessageLookupByLibrary.simpleMessage("Bitcoin Orange"),
+        "Bitcoin_Orange_Desc": MessageLookupByLibrary.simpleMessage(
+            "Classic Bitcoin orange colors"),
         "Bitpulse_is": MessageLookupByLibrary.simpleMessage(
             "BitPulse is a cryptocurrency tracking app that helps you monitor your favorite coins and stay updated with market trends."),
         "Build": MessageLookupByLibrary.simpleMessage("Build :001"),
         "Cache_cleared_successfully":
             MessageLookupByLibrary.simpleMessage("Cache cleared successfully"),
         "Classic_Dark": MessageLookupByLibrary.simpleMessage("Classic Dark"),
+        "Classic_Dark_Desc":
+            MessageLookupByLibrary.simpleMessage("Material design dark theme"),
         "Clear_All": MessageLookupByLibrary.simpleMessage("Clear All"),
         "Clear_All_Data":
             MessageLookupByLibrary.simpleMessage("Clear All Data"),
@@ -54,10 +58,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "Crypto_List": MessageLookupByLibrary.simpleMessage("Crypto List"),
         "Current": MessageLookupByLibrary.simpleMessage("Current"),
         "Default": MessageLookupByLibrary.simpleMessage("Default"),
+        "Default_Desc":
+            MessageLookupByLibrary.simpleMessage("Professional green theme"),
         "Error_": MessageLookupByLibrary.simpleMessage("Error: "),
         "Error_loading_market_data":
             MessageLookupByLibrary.simpleMessage("Error loading market data"),
         "Ethereum_Blue": MessageLookupByLibrary.simpleMessage("Ethereum Blue"),
+        "Ethereum_Blue_Desc": MessageLookupByLibrary.simpleMessage(
+            "Ethereum-inspired blue theme"),
         "Exchange": MessageLookupByLibrary.simpleMessage("Exchange"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("Exchange Now"),
         "From": MessageLookupByLibrary.simpleMessage("From"),
@@ -75,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Loading Exchange View ..."),
         "Logging_out": MessageLookupByLibrary.simpleMessage("Logging out..."),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("Minimal Light"),
+        "Minimal_Light_Desc": MessageLookupByLibrary.simpleMessage(
+            "Clean and minimal light theme"),
         "No_data_available":
             MessageLookupByLibrary.simpleMessage("No data available"),
         "No_favorites_yet":
@@ -169,6 +179,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "precise_Calculations":
             MessageLookupByLibrary.simpleMessage("Precise Calculations"),
         "purple_crypto": MessageLookupByLibrary.simpleMessage("Purple Crypto"),
+        "purple_crypto_Desc":
+            MessageLookupByLibrary.simpleMessage("Modern purple crypto theme"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember me"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("Removed from Stars List"),

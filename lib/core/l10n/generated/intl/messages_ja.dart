@@ -28,12 +28,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "Amount": MessageLookupByLibrary.simpleMessage("金額"),
         "App_Theme": MessageLookupByLibrary.simpleMessage("アプリのテーマ"),
         "Bitcoin_Orange": MessageLookupByLibrary.simpleMessage("ビットコインオレンジ"),
+        "Bitcoin_Orange_Desc":
+            MessageLookupByLibrary.simpleMessage("クラシックなビットコインオレンジの配色"),
         "Bitpulse_is": MessageLookupByLibrary.simpleMessage(
             "BitPulseは、お気に入りのコインを監視し、市場のトレンドを最新の状態に保つのに役立つ暗号資産追跡アプリです。"),
         "Build": MessageLookupByLibrary.simpleMessage("ビルド :001"),
         "Cache_cleared_successfully":
             MessageLookupByLibrary.simpleMessage("キャッシュが正常にクリアされました"),
         "Classic_Dark": MessageLookupByLibrary.simpleMessage("クラシックダーク"),
+        "Classic_Dark_Desc":
+            MessageLookupByLibrary.simpleMessage("マテリアルデザインのダークテーマ"),
         "Clear_All": MessageLookupByLibrary.simpleMessage("すべてクリア"),
         "Clear_All_Data": MessageLookupByLibrary.simpleMessage("すべてのデータをクリア"),
         "Clear_Cache_message": MessageLookupByLibrary.simpleMessage(
@@ -47,10 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "Crypto_List": MessageLookupByLibrary.simpleMessage("暗号資産リスト"),
         "Current": MessageLookupByLibrary.simpleMessage("現在"),
         "Default": MessageLookupByLibrary.simpleMessage("デフォルト"),
+        "Default_Desc":
+            MessageLookupByLibrary.simpleMessage("プロフェッショナルなグリーンのテーマ"),
         "Error_": MessageLookupByLibrary.simpleMessage("エラー："),
         "Error_loading_market_data":
             MessageLookupByLibrary.simpleMessage("市場データの読み込みエラー"),
         "Ethereum_Blue": MessageLookupByLibrary.simpleMessage("イーサリアムブルー"),
+        "Ethereum_Blue_Desc":
+            MessageLookupByLibrary.simpleMessage("イーサリアムに着想を得たブルーのテーマ"),
         "Exchange": MessageLookupByLibrary.simpleMessage("交換"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("今すぐ交換"),
         "From": MessageLookupByLibrary.simpleMessage("から"),
@@ -66,6 +74,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("交換ビューを読み込み中..."),
         "Logging_out": MessageLookupByLibrary.simpleMessage("ログアウト中..."),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("ミニマルライト"),
+        "Minimal_Light_Desc":
+            MessageLookupByLibrary.simpleMessage("クリーンでミニマルなライトテーマ"),
         "No_data_available":
             MessageLookupByLibrary.simpleMessage("利用可能なデータはありません"),
         "No_favorites_yet":
@@ -148,6 +158,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "portuguese": MessageLookupByLibrary.simpleMessage("ポルトガル語"),
         "precise_Calculations": MessageLookupByLibrary.simpleMessage("正確な計算"),
         "purple_crypto": MessageLookupByLibrary.simpleMessage("パープルクリプト"),
+        "purple_crypto_Desc":
+            MessageLookupByLibrary.simpleMessage("モダンなパープルのクリプトテーマ"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("ログイン状態を維持"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("スターリストから削除されました"),

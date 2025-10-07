@@ -1205,6 +1205,66 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Professional green theme`
+  String get Default_Desc {
+    return Intl.message(
+      'Professional green theme',
+      name: 'Default_Desc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Classic Bitcoin orange colors`
+  String get Bitcoin_Orange_Desc {
+    return Intl.message(
+      'Classic Bitcoin orange colors',
+      name: 'Bitcoin_Orange_Desc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ethereum-inspired blue theme`
+  String get Ethereum_Blue_Desc {
+    return Intl.message(
+      'Ethereum-inspired blue theme',
+      name: 'Ethereum_Blue_Desc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Material design dark theme`
+  String get Classic_Dark_Desc {
+    return Intl.message(
+      'Material design dark theme',
+      name: 'Classic_Dark_Desc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clean and minimal light theme`
+  String get Minimal_Light_Desc {
+    return Intl.message(
+      'Clean and minimal light theme',
+      name: 'Minimal_Light_Desc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Modern purple crypto theme`
+  String get purple_crypto_Desc {
+    return Intl.message(
+      'Modern purple crypto theme',
+      name: 'purple_crypto_Desc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

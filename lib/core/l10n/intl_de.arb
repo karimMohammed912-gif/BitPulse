@@ -113,5 +113,11 @@
   "App_Theme": "App-Thema",
   "Current": "Aktuell",
   "Version": "Version :1.0.0",
-  "Build": "Build :001"
+  "Build": "Build :001",
+  "Default_Desc": "Professionelles grünes Thema",
+  "Bitcoin_Orange_Desc": "Klassische Bitcoin-Orange-Töne",
+  "Ethereum_Blue_Desc": "Von Ethereum inspiriertes blaues Thema",
+  "Classic_Dark_Desc": "Dunkles Thema im Material-Design",
+  "Minimal_Light_Desc": "Sauberes und minimalistisches helles Thema",
+  "purple_crypto_Desc": "Modernes violettes Krypto-Thema"
 }

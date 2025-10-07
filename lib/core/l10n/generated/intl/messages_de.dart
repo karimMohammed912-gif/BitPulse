@@ -30,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "App_Theme": MessageLookupByLibrary.simpleMessage("App-Thema"),
         "Bitcoin_Orange":
             MessageLookupByLibrary.simpleMessage("Bitcoin Orange"),
+        "Bitcoin_Orange_Desc": MessageLookupByLibrary.simpleMessage(
+            "Klassische Bitcoin-Orange-Töne"),
         "Bitpulse_is": MessageLookupByLibrary.simpleMessage(
             "BitPulse ist eine App zur Verfolgung von Kryptowährungen, mit der Sie Ihre Lieblingsmünzen überwachen und über Markttrends auf dem Laufenden bleiben können."),
         "Build": MessageLookupByLibrary.simpleMessage("Build :001"),
@@ -37,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Cache erfolgreich geleert"),
         "Classic_Dark":
             MessageLookupByLibrary.simpleMessage("Klassisch Dunkel"),
+        "Classic_Dark_Desc": MessageLookupByLibrary.simpleMessage(
+            "Dunkles Thema im Material-Design"),
         "Clear_All": MessageLookupByLibrary.simpleMessage("Alles löschen"),
         "Clear_All_Data":
             MessageLookupByLibrary.simpleMessage("Alle Daten löschen"),
@@ -54,10 +58,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "Crypto_List": MessageLookupByLibrary.simpleMessage("Krypto-Liste"),
         "Current": MessageLookupByLibrary.simpleMessage("Aktuell"),
         "Default": MessageLookupByLibrary.simpleMessage("Standard"),
+        "Default_Desc": MessageLookupByLibrary.simpleMessage(
+            "Professionelles grünes Thema"),
         "Error_": MessageLookupByLibrary.simpleMessage("Fehler: "),
         "Error_loading_market_data": MessageLookupByLibrary.simpleMessage(
             "Fehler beim Laden der Marktdaten"),
         "Ethereum_Blue": MessageLookupByLibrary.simpleMessage("Ethereum Blau"),
+        "Ethereum_Blue_Desc": MessageLookupByLibrary.simpleMessage(
+            "Von Ethereum inspiriertes blaues Thema"),
         "Exchange": MessageLookupByLibrary.simpleMessage("Tauschen"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("Jetzt tauschen"),
         "From": MessageLookupByLibrary.simpleMessage("Von"),
@@ -76,6 +84,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Tauschansicht wird geladen ..."),
         "Logging_out": MessageLookupByLibrary.simpleMessage("Abmeldung..."),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("Minimal Hell"),
+        "Minimal_Light_Desc": MessageLookupByLibrary.simpleMessage(
+            "Sauberes und minimalistisches helles Thema"),
         "No_data_available":
             MessageLookupByLibrary.simpleMessage("Keine Daten verfügbar"),
         "No_favorites_yet":
@@ -171,6 +181,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "precise_Calculations":
             MessageLookupByLibrary.simpleMessage("Präzise Berechnungen"),
         "purple_crypto": MessageLookupByLibrary.simpleMessage("Lila Krypto"),
+        "purple_crypto_Desc": MessageLookupByLibrary.simpleMessage(
+            "Modernes violettes Krypto-Thema"),
         "rememberMe":
             MessageLookupByLibrary.simpleMessage("Angemeldet bleiben"),
         "removed_from_StarsList": MessageLookupByLibrary.simpleMessage(

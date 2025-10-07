@@ -29,12 +29,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "App_Theme": MessageLookupByLibrary.simpleMessage("مظهر التطبيق"),
         "Bitcoin_Orange":
             MessageLookupByLibrary.simpleMessage("برتقالي بيتكوين"),
+        "Bitcoin_Orange_Desc": MessageLookupByLibrary.simpleMessage(
+            "ألوان برتقالية كلاسيكية لبيتكوين"),
         "Bitpulse_is": MessageLookupByLibrary.simpleMessage(
             "BitPulse هو تطبيق لتتبع العملات الرقمية يساعدك على مراقبة عملاتك المفضلة والبقاء على اطلاع دائم باتجاهات السوق."),
         "Build": MessageLookupByLibrary.simpleMessage("البناء :001"),
         "Cache_cleared_successfully": MessageLookupByLibrary.simpleMessage(
             "تم مسح ذاكرة التخزين المؤقت بنجاح"),
         "Classic_Dark": MessageLookupByLibrary.simpleMessage("داكن كلاسيكي"),
+        "Classic_Dark_Desc":
+            MessageLookupByLibrary.simpleMessage("سمة داكنة بتصميم مادي"),
         "Clear_All": MessageLookupByLibrary.simpleMessage("مسح الكل"),
         "Clear_All_Data":
             MessageLookupByLibrary.simpleMessage("مسح جميع البيانات"),
@@ -53,10 +57,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("قائمة العملات الرقمية"),
         "Current": MessageLookupByLibrary.simpleMessage("الحالي"),
         "Default": MessageLookupByLibrary.simpleMessage("الافتراضي"),
+        "Default_Desc":
+            MessageLookupByLibrary.simpleMessage("مظهر أخضر احترافي"),
         "Error_": MessageLookupByLibrary.simpleMessage("خطأ: "),
         "Error_loading_market_data":
             MessageLookupByLibrary.simpleMessage("خطأ في تحميل بيانات السوق"),
         "Ethereum_Blue": MessageLookupByLibrary.simpleMessage("أزرق إيثيريوم"),
+        "Ethereum_Blue_Desc": MessageLookupByLibrary.simpleMessage(
+            "سمة زرقاء مستوحاة من إيثيريوم"),
         "Exchange": MessageLookupByLibrary.simpleMessage("صرف"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("صرف الآن"),
         "From": MessageLookupByLibrary.simpleMessage("من"),
@@ -75,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Logging_out":
             MessageLookupByLibrary.simpleMessage("جار تسجيل الخروج..."),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("فاتح بسيط"),
+        "Minimal_Light_Desc":
+            MessageLookupByLibrary.simpleMessage("سمة فاتحة نظيفة وبسيطة"),
         "No_data_available":
             MessageLookupByLibrary.simpleMessage("لا توجد بيانات متاحة"),
         "No_favorites_yet":
@@ -169,6 +179,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "precise_Calculations":
             MessageLookupByLibrary.simpleMessage("حسابات دقيقة"),
         "purple_crypto": MessageLookupByLibrary.simpleMessage("بنفسجي كريبتو"),
+        "purple_crypto_Desc":
+            MessageLookupByLibrary.simpleMessage("سمة كريبتو بنفسجية حديثة"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("تمت الإزالة من قائمة النجوم"),

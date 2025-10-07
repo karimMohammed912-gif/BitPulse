@@ -69,7 +69,7 @@ class ThemeCubit extends Cubit<ThemeState> {
   }
 
   // Get all available themes
-  Map<String, ThemeData> get availableThemes => AppThemes.getAllThemes();
+ 
 
   // Get current theme name
   String get currentThemeName {

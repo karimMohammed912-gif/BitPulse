@@ -113,5 +113,11 @@
   "App_Theme": "アプリのテーマ",
   "Current": "現在",
   "Version": "バージョン :1.0.0",
-  "Build": "ビルド :001"
+  "Build": "ビルド :001",
+  "Default_Desc": "プロフェッショナルなグリーンのテーマ",
+  "Bitcoin_Orange_Desc": "クラシックなビットコインオレンジの配色",
+  "Ethereum_Blue_Desc": "イーサリアムに着想を得たブルーのテーマ",
+  "Classic_Dark_Desc": "マテリアルデザインのダークテーマ",
+  "Minimal_Light_Desc": "クリーンでミニマルなライトテーマ",
+  "purple_crypto_Desc": "モダンなパープルのクリプトテーマ"
 }

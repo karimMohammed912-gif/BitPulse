@@ -1,12 +1,11 @@
-import 'package:bitpulse/core/Themes/theme_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ThemeWidget extends StatelessWidget {
   const ThemeWidget({
     super.key,
     required this.context,
     required this.themeName,
+    required this.themeDescription,
     required this.themeData,
     required this.isSelected,
     required this.onTap,
@@ -14,6 +13,7 @@ class ThemeWidget extends StatelessWidget {
 
   final BuildContext context;
   final String themeName;
+  final String themeDescription;
   final ThemeData themeData;
   final bool isSelected;
   final VoidCallback onTap;
@@ -73,7 +73,7 @@ class ThemeWidget extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      context.read<ThemeCubit>().getThemeDescription(themeName),
+                      themeDescription,
                       style: TextStyle(fontSize: 12, color: Colors.grey[600]),
                     ),
                   ],
