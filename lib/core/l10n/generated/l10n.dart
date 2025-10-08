@@ -1265,6 +1265,196 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Amount`
+  String get amount {
+    return Intl.message(
+      'Amount',
+      name: 'amount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Genesis Date`
+  String get Genesis_Date {
+    return Intl.message(
+      'Genesis Date',
+      name: 'Genesis_Date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Market Cap Rank`
+  String get Market_Cap_Rank {
+    return Intl.message(
+      'Market Cap Rank',
+      name: 'Market_Cap_Rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please wait while crypto details are loading...`
+  String get Please_wait_while_crypto_details_are_loading {
+    return Intl.message(
+      'Please wait while crypto details are loading...',
+      name: 'Please_wait_while_crypto_details_are_loading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add to Favorites`
+  String get add_to_favorites {
+    return Intl.message(
+      'Add to Favorites',
+      name: 'add_to_favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Removed from Favorites`
+  String get removed_from_favorites {
+    return Intl.message(
+      'Removed from Favorites',
+      name: 'removed_from_favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Details`
+  String get details {
+    return Intl.message(
+      'Details',
+      name: 'details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `key Market Metrics`
+  String get key_maket_metrics {
+    return Intl.message(
+      'key Market Metrics',
+      name: 'key_maket_metrics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Homepage URL`
+  String get homepage_url {
+    return Intl.message(
+      'Homepage URL',
+      name: 'homepage_url',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Key Engagement and Community`
+  String get key_engagement_and_community {
+    return Intl.message(
+      'Key Engagement and Community',
+      name: 'key_engagement_and_community',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sentiment Votes Down Percentage`
+  String get sentiment_Votes_Down_Percentage {
+    return Intl.message(
+      'Sentiment Votes Down Percentage',
+      name: 'sentiment_Votes_Down_Percentage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sentiment Votes Up Percentage`
+  String get sentiment_Votes_Up_Percentage {
+    return Intl.message(
+      'Sentiment Votes Up Percentage',
+      name: 'sentiment_Votes_Up_Percentage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Watchlist and Categories`
+  String get watchlist_and_categories {
+    return Intl.message(
+      'Watchlist and Categories',
+      name: 'watchlist_and_categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Watchlist Portfolio Users`
+  String get watchlist_portfolio_users {
+    return Intl.message(
+      'Watchlist Portfolio Users',
+      name: 'watchlist_portfolio_users',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description`
+  String get description {
+    return Intl.message(
+      'Description',
+      name: 'description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No description available`
+  String get no_description_available {
+    return Intl.message(
+      'No description available',
+      name: 'no_description_available',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subreddit URL`
+  String get subreddit_url {
+    return Intl.message(
+      'Subreddit URL',
+      name: 'subreddit_url',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Important Resources`
+  String get impotant_resources {
+    return Intl.message(
+      'Important Resources',
+      name: 'impotant_resources',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

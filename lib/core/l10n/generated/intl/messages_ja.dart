@@ -62,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Exchange": MessageLookupByLibrary.simpleMessage("交換"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("今すぐ交換"),
         "From": MessageLookupByLibrary.simpleMessage("から"),
+        "Genesis_Date": MessageLookupByLibrary.simpleMessage("ジェネシス日"),
         "Get_real_time_exchange_rates_for_a_wide_range_of_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage("幅広い暗号資産のリアルタイム為替レートを取得"),
         "Global_market_cap": MessageLookupByLibrary.simpleMessage("世界の時価総額"),
@@ -73,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Loading_Exchange_View":
             MessageLookupByLibrary.simpleMessage("交換ビューを読み込み中..."),
         "Logging_out": MessageLookupByLibrary.simpleMessage("ログアウト中..."),
+        "Market_Cap_Rank": MessageLookupByLibrary.simpleMessage("時価総額ランキング"),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("ミニマルライト"),
         "Minimal_Light_Desc":
             MessageLookupByLibrary.simpleMessage("クリーンでミニマルなライトテーマ"),
@@ -88,6 +90,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("高度な計算ツールで正確な通貨換算を実行"),
         "Please_try_again_later":
             MessageLookupByLibrary.simpleMessage("後でもう一度お試しください"),
+        "Please_wait_while_crypto_details_are_loading":
+            MessageLookupByLibrary.simpleMessage("暗号資産の詳細を読み込んでいます。お待ちください..."),
         "Quickly_swap_between_different_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage("異なる暗号資産間ですばやくスワップ"),
         "Real_time_Rates": MessageLookupByLibrary.simpleMessage("リアルタイムレート"),
@@ -108,16 +112,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "To": MessageLookupByLibrary.simpleMessage("へ"),
         "Version": MessageLookupByLibrary.simpleMessage("バージョン :1.0.0"),
         "about": MessageLookupByLibrary.simpleMessage("概要"),
+        "add_to_favorites": MessageLookupByLibrary.simpleMessage("お気に入りに追加"),
         "added_to_StarsList":
             MessageLookupByLibrary.simpleMessage("スターリストに追加されました"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("すでにアカウントをお持ちですか？"),
+        "amount": MessageLookupByLibrary.simpleMessage("量"),
         "appTitle": MessageLookupByLibrary.simpleMessage("BitPulse"),
         "app_theme": MessageLookupByLibrary.simpleMessage("アプリのテーマ"),
         "app_version": MessageLookupByLibrary.simpleMessage("アプリのバージョンと情報"),
         "are_you_sure_you_want_to_logout":
             MessageLookupByLibrary.simpleMessage("本当にログアウトしますか？"),
         "cancel": MessageLookupByLibrary.simpleMessage("キャンセル"),
+        "categories": MessageLookupByLibrary.simpleMessage("カテゴリ"),
         "change_24h": MessageLookupByLibrary.simpleMessage("24時間の変化"),
         "chinese": MessageLookupByLibrary.simpleMessage("中国語"),
         "clear_cache": MessageLookupByLibrary.simpleMessage("キャッシュをクリア"),
@@ -125,6 +132,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueWithGoogle": MessageLookupByLibrary.simpleMessage("Googleで続行"),
         "createAccount": MessageLookupByLibrary.simpleMessage("アカウントを作成"),
         "currency_exchange": MessageLookupByLibrary.simpleMessage("通貨交換"),
+        "description": MessageLookupByLibrary.simpleMessage("説明"),
+        "details": MessageLookupByLibrary.simpleMessage("詳細"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("アカウントをお持ちではありませんか？"),
         "easy_Swapping": MessageLookupByLibrary.simpleMessage("簡単なスワップ"),
@@ -141,10 +150,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "german": MessageLookupByLibrary.simpleMessage("ドイツ語"),
         "goback": MessageLookupByLibrary.simpleMessage("戻る"),
         "home": MessageLookupByLibrary.simpleMessage("ホーム"),
+        "homepage_url": MessageLookupByLibrary.simpleMessage("ホームページURL"),
+        "impotant_resources": MessageLookupByLibrary.simpleMessage("重要なリソース"),
         "is_down": MessageLookupByLibrary.simpleMessage("下落中"),
         "is_up": MessageLookupByLibrary.simpleMessage("上昇中"),
         "italian": MessageLookupByLibrary.simpleMessage("イタリア語"),
         "japanese": MessageLookupByLibrary.simpleMessage("日本語"),
+        "key_engagement_and_community":
+            MessageLookupByLibrary.simpleMessage("主要なエンゲージメントとコミュニティ"),
+        "key_maket_metrics": MessageLookupByLibrary.simpleMessage("主要な市場指標"),
         "language": MessageLookupByLibrary.simpleMessage("言語"),
         "loading": MessageLookupByLibrary.simpleMessage("読み込み中..."),
         "loading_market_data":
@@ -153,6 +167,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginButton": MessageLookupByLibrary.simpleMessage("ログイン"),
         "logout": MessageLookupByLibrary.simpleMessage("ログアウト"),
         "my_stars_List": MessageLookupByLibrary.simpleMessage("マイスターリスト"),
+        "no_description_available":
+            MessageLookupByLibrary.simpleMessage("説明はありません"),
         "or": MessageLookupByLibrary.simpleMessage("または"),
         "password": MessageLookupByLibrary.simpleMessage("パスワード"),
         "portuguese": MessageLookupByLibrary.simpleMessage("ポルトガル語"),
@@ -163,10 +179,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "rememberMe": MessageLookupByLibrary.simpleMessage("ログイン状態を維持"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("スターリストから削除されました"),
+        "removed_from_favorites":
+            MessageLookupByLibrary.simpleMessage("お気に入りから削除しました"),
         "reset_App_to_Default_Settings":
             MessageLookupByLibrary.simpleMessage("アプリをデフォルト設定にリセット"),
         "retry": MessageLookupByLibrary.simpleMessage("再試行"),
         "search": MessageLookupByLibrary.simpleMessage("検索"),
+        "sentiment_Votes_Down_Percentage":
+            MessageLookupByLibrary.simpleMessage("センチメント投票の反対率"),
+        "sentiment_Votes_Up_Percentage":
+            MessageLookupByLibrary.simpleMessage("センチメント投票の賛成率"),
         "settings": MessageLookupByLibrary.simpleMessage("設定"),
         "signIn": MessageLookupByLibrary.simpleMessage("サインイン"),
         "signInToContinueYourCryptoJourney":
@@ -175,6 +197,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpButton": MessageLookupByLibrary.simpleMessage("サインアップ"),
         "spanish": MessageLookupByLibrary.simpleMessage("スペイン語"),
         "start_exchanging": MessageLookupByLibrary.simpleMessage("交換を開始"),
+        "subreddit_url": MessageLookupByLibrary.simpleMessage("SubredditのURL"),
         "tap_the_star_icon_on_a_crypto_to_add_it_to_your_favorites":
             MessageLookupByLibrary.simpleMessage("暗号資産の星アイコンをタップしてお気に入りに追加します"),
         "this_will_reset_the_app_to_default_settings_and_clear_all_data_this_action_cannot_be_undone":
@@ -182,6 +205,10 @@ class MessageLookup extends MessageLookupByLibrary {
                 "これにより、アプリがデフォルト設定にリセットされ、すべてのデータが消去されます。この操作は元に戻せません。"),
         "userid": MessageLookupByLibrary.simpleMessage("ユーザーID"),
         "username": MessageLookupByLibrary.simpleMessage("ユーザー名"),
+        "watchlist_and_categories":
+            MessageLookupByLibrary.simpleMessage("ウォッチリストとカテゴリ"),
+        "watchlist_portfolio_users":
+            MessageLookupByLibrary.simpleMessage("ウォッチリストポートフォリオユーザー"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("おかえりなさい")
       };
 }

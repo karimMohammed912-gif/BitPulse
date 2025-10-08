@@ -1,4 +1,4 @@
-{ 
+{
   "@@locale": "ar",
   "appTitle": "BitPulse",
   "login": "تسجيل الدخول",
@@ -119,5 +119,24 @@
   "Ethereum_Blue_Desc": "سمة زرقاء مستوحاة من إيثيريوم",
   "Classic_Dark_Desc": "سمة داكنة بتصميم مادي",
   "Minimal_Light_Desc": "سمة فاتحة نظيفة وبسيطة",
-  "purple_crypto_Desc": "سمة كريبتو بنفسجية حديثة"
+  "purple_crypto_Desc": "سمة كريبتو بنفسجية حديثة",
+  "amount": "الكمية",
+  "Genesis_Date": "تاريخ الإنشاء",
+  "Market_Cap_Rank": "ترتيب القيمة السوقية",
+  "Please_wait_while_crypto_details_are_loading": "يرجى الانتظار ريثما يتم تحميل تفاصيل العملة المشفرة...",
+  "add_to_favorites": "إضافة إلى المفضلة",
+  "removed_from_favorites": "تمت الإزالة من المفضلة",
+  "details": "التفاصيل",
+  "key_maket_metrics": "مقاييس السوق الرئيسية",
+  "homepage_url": "رابط الصفحة الرئيسية",
+  "key_engagement_and_community": "المشاركة الرئيسية والمجتمع",
+  "sentiment_Votes_Down_Percentage": "نسبة تصويتات المشاعر السلبية",
+  "sentiment_Votes_Up_Percentage": "نسبة تصويتات المشاعر الإيجابية",
+  "watchlist_and_categories": "قائمة المراقبة والفئات",
+  "watchlist_portfolio_users": "مستخدمو قائمة المراقبة والمحفظة",
+  "categories": "الفئات",
+  "description": "الوصف",
+  "no_description_available": "لا يوجد وصف متاح",
+  "subreddit_url": "رابط Subreddit",
+  "impotant_resources": "مصادر هامة"
 }

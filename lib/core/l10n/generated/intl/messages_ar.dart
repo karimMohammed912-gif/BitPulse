@@ -68,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Exchange": MessageLookupByLibrary.simpleMessage("صرف"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("صرف الآن"),
         "From": MessageLookupByLibrary.simpleMessage("من"),
+        "Genesis_Date": MessageLookupByLibrary.simpleMessage("تاريخ الإنشاء"),
         "Get_real_time_exchange_rates_for_a_wide_range_of_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage(
                 "احصل على أسعار صرف في الوقت الفعلي لمجموعة واسعة من العملات الرقمية"),
@@ -82,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("جار تحميل عرض الصرف ..."),
         "Logging_out":
             MessageLookupByLibrary.simpleMessage("جار تسجيل الخروج..."),
+        "Market_Cap_Rank":
+            MessageLookupByLibrary.simpleMessage("ترتيب القيمة السوقية"),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("فاتح بسيط"),
         "Minimal_Light_Desc":
             MessageLookupByLibrary.simpleMessage("سمة فاتحة نظيفة وبسيطة"),
@@ -99,6 +102,9 @@ class MessageLookup extends MessageLookupByLibrary {
                 "قم بإجراء تحويلات عملات دقيقة باستخدام أدوات حساب متقدمة"),
         "Please_try_again_later": MessageLookupByLibrary.simpleMessage(
             "يرجى المحاولة مرة أخرى لاحقًا"),
+        "Please_wait_while_crypto_details_are_loading":
+            MessageLookupByLibrary.simpleMessage(
+                "يرجى الانتظار ريثما يتم تحميل تفاصيل العملة المشفرة..."),
         "Quickly_swap_between_different_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage(
                 "بدّل بسرعة بين العملات الرقمية المختلفة"),
@@ -122,10 +128,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "To": MessageLookupByLibrary.simpleMessage("إلى"),
         "Version": MessageLookupByLibrary.simpleMessage("الإصدار :1.0.0"),
         "about": MessageLookupByLibrary.simpleMessage("حول"),
+        "add_to_favorites":
+            MessageLookupByLibrary.simpleMessage("إضافة إلى المفضلة"),
         "added_to_StarsList": MessageLookupByLibrary.simpleMessage(
             "تمت الإضافة إلى قائمة النجوم"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟"),
+        "amount": MessageLookupByLibrary.simpleMessage("الكمية"),
         "appTitle": MessageLookupByLibrary.simpleMessage("BitPulse"),
         "app_theme": MessageLookupByLibrary.simpleMessage("مظهر التطبيق"),
         "app_version":
@@ -133,6 +142,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "are_you_sure_you_want_to_logout": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد تسجيل الخروج؟"),
         "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
+        "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
         "change_24h":
             MessageLookupByLibrary.simpleMessage("التغير خلال 24 ساعة"),
         "chinese": MessageLookupByLibrary.simpleMessage("الصينية"),
@@ -144,6 +154,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "currency_exchange":
             MessageLookupByLibrary.simpleMessage("صرف العملات"),
+        "description": MessageLookupByLibrary.simpleMessage("الوصف"),
+        "details": MessageLookupByLibrary.simpleMessage("التفاصيل"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "easy_Swapping": MessageLookupByLibrary.simpleMessage("تبديل سهل"),
@@ -160,10 +172,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "german": MessageLookupByLibrary.simpleMessage("الألمانية"),
         "goback": MessageLookupByLibrary.simpleMessage("العودة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "homepage_url":
+            MessageLookupByLibrary.simpleMessage("رابط الصفحة الرئيسية"),
+        "impotant_resources":
+            MessageLookupByLibrary.simpleMessage("مصادر هامة"),
         "is_down": MessageLookupByLibrary.simpleMessage("منخفض"),
         "is_up": MessageLookupByLibrary.simpleMessage("مرتفع"),
         "italian": MessageLookupByLibrary.simpleMessage("الإيطالية"),
         "japanese": MessageLookupByLibrary.simpleMessage("اليابانية"),
+        "key_engagement_and_community":
+            MessageLookupByLibrary.simpleMessage("المشاركة الرئيسية والمجتمع"),
+        "key_maket_metrics":
+            MessageLookupByLibrary.simpleMessage("مقاييس السوق الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "loading": MessageLookupByLibrary.simpleMessage("جار التحميل..."),
         "loading_market_data":
@@ -173,6 +193,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "my_stars_List":
             MessageLookupByLibrary.simpleMessage("قائمة النجوم الخاصة بي"),
+        "no_description_available":
+            MessageLookupByLibrary.simpleMessage("لا يوجد وصف متاح"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "portuguese": MessageLookupByLibrary.simpleMessage("البرتغالية"),
@@ -184,10 +206,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("تمت الإزالة من قائمة النجوم"),
+        "removed_from_favorites":
+            MessageLookupByLibrary.simpleMessage("تمت الإزالة من المفضلة"),
         "reset_App_to_Default_Settings": MessageLookupByLibrary.simpleMessage(
             "إعادة ضبط التطبيق إلى الإعدادات الافتراضية"),
         "retry": MessageLookupByLibrary.simpleMessage("إعادة المحاولة"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
+        "sentiment_Votes_Down_Percentage": MessageLookupByLibrary.simpleMessage(
+            "نسبة تصويتات المشاعر السلبية"),
+        "sentiment_Votes_Up_Percentage": MessageLookupByLibrary.simpleMessage(
+            "نسبة تصويتات المشاعر الإيجابية"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signInToContinueYourCryptoJourney":
@@ -197,6 +225,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpButton": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "spanish": MessageLookupByLibrary.simpleMessage("الإسبانية"),
         "start_exchanging": MessageLookupByLibrary.simpleMessage("ابدأ الصرف"),
+        "subreddit_url": MessageLookupByLibrary.simpleMessage("رابط Subreddit"),
         "tap_the_star_icon_on_a_crypto_to_add_it_to_your_favorites":
             MessageLookupByLibrary.simpleMessage(
                 "اضغط على أيقونة النجمة على عملة رقمية لإضافتها إلى مفضلاتك"),
@@ -205,6 +234,10 @@ class MessageLookup extends MessageLookupByLibrary {
                 "سيؤدي هذا إلى إعادة ضبط التطبيق على الإعدادات الافتراضية ومسح جميع البيانات. لا يمكن التراجع عن هذا الإجراء."),
         "userid": MessageLookupByLibrary.simpleMessage("معرف المستخدم"),
         "username": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+        "watchlist_and_categories":
+            MessageLookupByLibrary.simpleMessage("قائمة المراقبة والفئات"),
+        "watchlist_portfolio_users": MessageLookupByLibrary.simpleMessage(
+            "مستخدمو قائمة المراقبة والمحفظة"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحباً بعودتك")
       };
 }

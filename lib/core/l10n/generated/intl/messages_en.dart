@@ -69,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Exchange": MessageLookupByLibrary.simpleMessage("Exchange"),
         "Exchange_Now": MessageLookupByLibrary.simpleMessage("Exchange Now"),
         "From": MessageLookupByLibrary.simpleMessage("From"),
+        "Genesis_Date": MessageLookupByLibrary.simpleMessage("Genesis Date"),
         "Get_real_time_exchange_rates_for_a_wide_range_of_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage(
                 "Get real-time exchange rates for a wide range of cryptocurrencies"),
@@ -82,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Loading_Exchange_View":
             MessageLookupByLibrary.simpleMessage("Loading Exchange View ..."),
         "Logging_out": MessageLookupByLibrary.simpleMessage("Logging out..."),
+        "Market_Cap_Rank":
+            MessageLookupByLibrary.simpleMessage("Market Cap Rank"),
         "Minimal_Light": MessageLookupByLibrary.simpleMessage("Minimal Light"),
         "Minimal_Light_Desc": MessageLookupByLibrary.simpleMessage(
             "Clean and minimal light theme"),
@@ -99,6 +102,9 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Perform accurate currency conversions with advanced calculation tools"),
         "Please_try_again_later":
             MessageLookupByLibrary.simpleMessage("Please try again later"),
+        "Please_wait_while_crypto_details_are_loading":
+            MessageLookupByLibrary.simpleMessage(
+                "Please wait while crypto details are loading..."),
         "Quickly_swap_between_different_cryptocurrencies":
             MessageLookupByLibrary.simpleMessage(
                 "Quickly swap between different cryptocurrencies"),
@@ -123,10 +129,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "To": MessageLookupByLibrary.simpleMessage("To"),
         "Version": MessageLookupByLibrary.simpleMessage("Version :1.0.0"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
+        "add_to_favorites":
+            MessageLookupByLibrary.simpleMessage("Add to Favorites"),
         "added_to_StarsList":
             MessageLookupByLibrary.simpleMessage("Added to Stars Lists"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "amount": MessageLookupByLibrary.simpleMessage("Amount"),
         "appTitle": MessageLookupByLibrary.simpleMessage("BitPulse"),
         "app_theme": MessageLookupByLibrary.simpleMessage("App Theme"),
         "app_version":
@@ -134,6 +143,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "are_you_sure_you_want_to_logout": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "change_24h": MessageLookupByLibrary.simpleMessage("24h Change"),
         "chinese": MessageLookupByLibrary.simpleMessage("Chinese"),
         "clear_cache": MessageLookupByLibrary.simpleMessage("Clear Cache"),
@@ -144,6 +154,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create an account"),
         "currency_exchange":
             MessageLookupByLibrary.simpleMessage("Currency Exchange"),
+        "description": MessageLookupByLibrary.simpleMessage("Description"),
+        "details": MessageLookupByLibrary.simpleMessage("Details"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "easy_Swapping": MessageLookupByLibrary.simpleMessage("Easy Swapping"),
@@ -160,11 +172,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "german": MessageLookupByLibrary.simpleMessage("German"),
         "goback": MessageLookupByLibrary.simpleMessage("Go Back"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "homepage_url": MessageLookupByLibrary.simpleMessage("Homepage URL"),
+        "impotant_resources":
+            MessageLookupByLibrary.simpleMessage("Important Resources"),
         "is_down": MessageLookupByLibrary.simpleMessage("is down"),
         "is_up": MessageLookupByLibrary.simpleMessage("is up"),
         "italian": MessageLookupByLibrary.simpleMessage("Italian"),
         "japanese": MessageLookupByLibrary.simpleMessage("Japanese"),
         "key1": MessageLookupByLibrary.simpleMessage("1"),
+        "key_engagement_and_community": MessageLookupByLibrary.simpleMessage(
+            "Key Engagement and Community"),
+        "key_maket_metrics":
+            MessageLookupByLibrary.simpleMessage("key Market Metrics"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading..."),
         "loading_market_data":
@@ -173,6 +192,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "my_stars_List": MessageLookupByLibrary.simpleMessage("My Stars List"),
+        "no_description_available":
+            MessageLookupByLibrary.simpleMessage("No description available"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "portuguese": MessageLookupByLibrary.simpleMessage("Portuguese"),
@@ -184,10 +205,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember me"),
         "removed_from_StarsList":
             MessageLookupByLibrary.simpleMessage("Removed from Stars List"),
+        "removed_from_favorites":
+            MessageLookupByLibrary.simpleMessage("Removed from Favorites"),
         "reset_App_to_Default_Settings": MessageLookupByLibrary.simpleMessage(
             "Reset App to Default Settings"),
         "retry": MessageLookupByLibrary.simpleMessage("Retry"),
         "search": MessageLookupByLibrary.simpleMessage("search"),
+        "sentiment_Votes_Down_Percentage": MessageLookupByLibrary.simpleMessage(
+            "Sentiment Votes Down Percentage"),
+        "sentiment_Votes_Up_Percentage": MessageLookupByLibrary.simpleMessage(
+            "Sentiment Votes Up Percentage"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInToContinueYourCryptoJourney":
@@ -198,6 +225,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "spanish": MessageLookupByLibrary.simpleMessage("Spanish"),
         "start_exchanging":
             MessageLookupByLibrary.simpleMessage("Start exchanging"),
+        "subreddit_url": MessageLookupByLibrary.simpleMessage("Subreddit URL"),
         "tap_the_star_icon_on_a_crypto_to_add_it_to_your_favorites":
             MessageLookupByLibrary.simpleMessage(
                 "Tap the star icon on a crypto to add it to your favorites"),
@@ -206,6 +234,10 @@ class MessageLookup extends MessageLookupByLibrary {
                 "This will reset the app to default settings and clear all data. This action cannot be undone."),
         "userid": MessageLookupByLibrary.simpleMessage("User ID"),
         "username": MessageLookupByLibrary.simpleMessage("Username"),
+        "watchlist_and_categories":
+            MessageLookupByLibrary.simpleMessage("Watchlist and Categories"),
+        "watchlist_portfolio_users":
+            MessageLookupByLibrary.simpleMessage("Watchlist Portfolio Users"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome back")
       };
 }
