@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:bitpulse/Features/DetailsFeature/Presentation/Cubit/details_cubit.dart';
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,7 +20,7 @@ class CardDetails extends StatelessWidget {
         children: [
           Expanded(
             child: GradientDetailCard(
-              title: 'Market Cap Rank',
+              title: AppLocalizations.of(context).Market_Cap_Rank,
               value: context.read<DetailsCubit>().hasNull(market.toString()),
               icon: Icons.trending_up,
               gradientColors: [
@@ -37,7 +38,7 @@ class CardDetails extends StatelessWidget {
           const SizedBox(width: 16),
           Expanded(
             child: GradientDetailCard(
-              title: 'Genesis Date',
+              title: AppLocalizations.of(context).Genesis_Date,
               value: context.read<DetailsCubit>().hasNull(genesisDate.toString()),
               icon: Icons.timelapse_outlined,
               gradientColors: [

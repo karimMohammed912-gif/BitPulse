@@ -1,5 +1,6 @@
 import 'package:bitpulse/Features/DetailsFeature/Presentation/Cubit/chart_cubit/chart_cubit_cubit.dart';
 import 'package:bitpulse/Features/DetailsFeature/Presentation/View/components/chartComponents/chart_build_widget.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -40,6 +41,7 @@ class _CustomPriceChartState extends State<CustomPriceChart> {
   // Callback function for time button press
 
   @override
+
   Widget build(BuildContext context) {
     return BlocBuilder<ChartCubitCubit,ChartCubitState> (
       builder: (context, state) {
@@ -49,7 +51,7 @@ class _CustomPriceChartState extends State<CustomPriceChart> {
           case ChartCubitFailure failure:
             return Center(
               child: Text(
-                'Error: ${failure.message}',
+                '${AppLocalizations.of(context).Error_} ${failure.message}',
                 style: TextStyle(color: Theme.of(context).colorScheme.error),
               ),
             );

@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ExchangeButton extends StatelessWidget {
@@ -17,8 +18,8 @@ class ExchangeButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
           ),
         ),
-        child: const Text(
-          'Exchange',
+        child:  Text(
+          AppLocalizations.of(context).Exchange,
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ),

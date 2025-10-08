@@ -1,4 +1,5 @@
 import 'package:bitpulse/core/extension/theme_extension.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class HeadSectionWidget extends StatelessWidget {
@@ -31,7 +32,7 @@ class HeadSectionWidget extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              'Currency Exchange',
+              AppLocalizations.of(context).currency_exchange,
               style: context.title?.copyWith(
                 color: context.textColor,
                 fontWeight: FontWeight.bold,
@@ -39,7 +40,7 @@ class HeadSectionWidget extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Convert between different cryptocurrencies',
+              AppLocalizations.of(context).Convert_between_different_cryptocurrencieswith_real_time_exchange_rates,
               style: context.body?.copyWith(
                 color: context.secondaryTextColor,
               ),

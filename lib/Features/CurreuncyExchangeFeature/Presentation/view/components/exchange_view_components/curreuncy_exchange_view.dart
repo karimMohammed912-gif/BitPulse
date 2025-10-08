@@ -5,6 +5,7 @@ import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/com
 import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/components/exchange_view_components/exchange_result_widget.dart';
 import 'package:bitpulse/Features/CurreuncyExchangeFeature/Presentation/view/components/exchange_view_components/head_section_widget.dart';
 import 'package:bitpulse/Features/HomeFeature/Presentation/View/cubit/home_cubit_cubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -52,8 +53,8 @@ class _CurrencyExchangeViewState extends State<CurrencyExchangeView> {
               // Amount Input
               TextField(
                 controller: _amountController,
-                decoration: const InputDecoration(
-                  labelText: 'Amount',
+                decoration:  InputDecoration(
+                  labelText: AppLocalizations.of(context).amount,
                   border: OutlineInputBorder(),
                   contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
                 ),
@@ -117,7 +118,7 @@ class _CurrencyExchangeViewState extends State<CurrencyExchangeView> {
                       child: Padding(
                         padding: const EdgeInsets.all(16),
                         child: Text(
-                          'Error: ${state.message}',
+                          '${AppLocalizations.of(context).Error_}${state.message}',
                           style: TextStyle(color: Colors.red.shade700),
                           textAlign: TextAlign.center,
                         ),

@@ -1,3 +1,4 @@
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {
@@ -31,12 +32,12 @@ class DescriptionWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Row(
+               Row(
                 children: [
-                  Icon(Icons.info_outline, color: Colors.blue),
-                  SizedBox(width: 8),
+                const  Icon(Icons.info_outline, color: Colors.blue),
+                 const  SizedBox(width: 8),
                   Text(
-                    'About',
+                    AppLocalizations.of(context).about,
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ],

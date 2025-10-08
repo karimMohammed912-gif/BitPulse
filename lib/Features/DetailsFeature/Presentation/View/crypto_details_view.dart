@@ -5,6 +5,7 @@ import 'package:bitpulse/Features/DetailsFeature/Presentation/View/components/de
 import 'package:bitpulse/Features/DetailsFeature/Presentation/Cubit/details_cubit.dart';
 import 'package:bitpulse/core/Routes/router_config.dart';
 import 'package:bitpulse/core/Themes/colors.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/widgets/error_widget.dart';
 import 'package:bitpulse/core/widgets/loading_widget.dart';
 import 'package:bitpulse/core/utils/star_service.dart';
@@ -56,8 +57,8 @@ class _CryptoDetailsViewState extends State<CryptoDetailsView> {
   Future<void> _toggleFavorite() async {
     if (_currentCryptoDetails == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please wait for crypto data to load'),
+         SnackBar(
+          content: Text(AppLocalizations.of(context).Please_wait_while_crypto_details_are_loading),
           backgroundColor: Colors.orange,
           duration: Duration(seconds: 2),
         ),
@@ -77,7 +78,7 @@ class _CryptoDetailsViewState extends State<CryptoDetailsView> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                '${_currentCryptoDetails!.name} removed from favorites',
+                '${_currentCryptoDetails!.name} ${AppLocalizations.of(context).removed_from_favorites}',
               ),
               backgroundColor: Colors.orange,
               duration: const Duration(seconds: 2),
@@ -105,7 +106,7 @@ class _CryptoDetailsViewState extends State<CryptoDetailsView> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                '${_currentCryptoDetails!.name} added to favorites',
+                '${_currentCryptoDetails!.name} ${AppLocalizations.of(context).add_to_favorites}',
               ),
               backgroundColor: AppColors.primary,
               duration: const Duration(seconds: 2),
@@ -117,8 +118,8 @@ class _CryptoDetailsViewState extends State<CryptoDetailsView> {
       debugPrint('Error toggling favorite: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Failed to update favorites'),
+           SnackBar(
+            content: Text(AppLocalizations.of(context).Something_went_wrong),
             backgroundColor: Colors.red,
             duration: Duration(seconds: 2),
           ),
@@ -172,10 +173,10 @@ class _CryptoDetailsViewState extends State<CryptoDetailsView> {
   }
 
   Widget _buildEmptyState() {
-    return const Center(
+    return  Center(
       child: Text(
-        'No data available',
-        style: TextStyle(fontSize: 16, color: AppColors.grey),
+        AppLocalizations.of(context).No_data_available,
+        style: const TextStyle(fontSize: 16, color: AppColors.grey),
       ),
     );
   }
