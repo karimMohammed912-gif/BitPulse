@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -7,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.example.bitpulse"
-    compileSdk = 35  // Updated from 34 to 35
+    compileSdk = 36
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -21,7 +23,7 @@ android {
     defaultConfig {
         applicationId = "com.example.bitpulse"
         minSdk = flutter.minSdkVersion
-        targetSdk = 35  // Also updated to 35 for consistency
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
@@ -33,6 +35,34 @@ android {
         }
         release {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+}
+
+// Configure signing: use release keystore if key.properties exists, otherwise fall back to debug signing so APK is signed
+val keystoreProperties = Properties().apply {
+    val f = rootProject.file("key.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+
+android {
+    signingConfigs {
+        create("release") {
+            storeFile = (keystoreProperties["storeFile"] as String?)?.let { file(it) }
+            storePassword = keystoreProperties["storePassword"] as String?
+            keyAlias = keystoreProperties["keyAlias"] as String?
+            keyPassword = keystoreProperties["keyPassword"] as String?
+        }
+    }
+    buildTypes {
+        getByName("release") {
+            signingConfig = if (keystoreProperties.isEmpty) {
+                signingConfigs.getByName("debug")
+            } else {
+                signingConfigs.getByName("release")
+            }
+            // Uncomment while testing
+            // isMinifyEnabled = false
         }
     }
 }
