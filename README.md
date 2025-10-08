@@ -110,3 +110,41 @@ On Windows, you can use the `deploy.bat` script to build the release APK and upl
 
 ```bat
 deploy.bat
+```
+
+## Google Sign‑In (Firebase Auth) Setup
+
+Follow these steps to enable Google authentication in BitPulse.
+
+1) Enable Google provider in Firebase
+- Firebase Console → Authentication → Sign-in method → Enable "Google".
+- Complete the OAuth consent screen if prompted.
+
+2) Add your Android app to Firebase
+- Firebase Console → Project settings → Your apps → Android, add:
+  - Package name: `com.example.bitpulse` (or your own if changed)
+  - Debug/Release SHA-1 & SHA-256 (recommended):
+    - Debug: `./gradlew signingReport` (Android Studio → Gradle panel → app → android → signingReport)
+    - Release: from your release keystore
+- Download `google-services.json` and place it in `android/app/`.
+
+3) Android Gradle configuration (already in this repo)
+- Root gradle has Google Services classpath; app module applies `com.google.gms.google-services`.
+
+4) Add your iOS app (if targeting iOS)
+- Firebase Console → Project settings → Your apps → iOS, add your bundle ID (e.g., `com.example.bitpulse`).
+- Download `GoogleService-Info.plist` into `ios/Runner/`.
+- Ensure the reversed client ID from the plist is added to URL Types (Xcode → Runner target → Info → URL Types).
+
+5) Keep secrets out of git
+- Don’t commit these files:
+  - `android/app/google-services.json`
+  - `ios/Runner/GoogleService-Info.plist`
+- Use local files for development, or store base64 versions in `.env`/CI secrets and materialize in CI.
+
+6) Test Google Sign‑In
+- Run the app on a device/emulator.
+- Tap "Continue with Google" on the auth screen.
+- If sign-in fails:
+  - Re-check SHA-1/SHA-256 in Firebase and re-download `google-services.json` after adding them.
+  - Verify the device account is permitted in the OAuth consent screen.
