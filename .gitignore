@@ -18,6 +18,9 @@ migrate_working_dir/
 *.iws
 .idea/
 lib/firebase_options.dart
+# Firebase config files (keep out of git)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
 
 
 # The .vscode folder contains launch configuration and tasks you configure in
