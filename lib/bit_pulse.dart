@@ -16,7 +16,7 @@ class BitPulse extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => AuthCubit()),
         BlocProvider(create: (context) => ThemeCubit()),
-        BlocProvider(create: (context) => LocaleCubit()),
+        BlocProvider(create: (context) => LocaleCubit()..loadSavedLocale()),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, themeState) {

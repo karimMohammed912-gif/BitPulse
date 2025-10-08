@@ -5,6 +5,7 @@ import 'package:bitpulse/Features/DetailsFeature/Presentation/View/components/de
 import 'package:bitpulse/Features/DetailsFeature/Presentation/View/components/detailsViewComponents/section1.dart';
 import 'package:bitpulse/Features/DetailsFeature/Presentation/View/components/detailsViewComponents/statics_card.dart';
 import 'package:bitpulse/Features/DetailsFeature/Presentation/Cubit/details_cubit.dart';
+import 'package:bitpulse/core/l10n/generated/l10n.dart';
 import 'package:bitpulse/core/widgets/custom_divider.dart';
 import 'package:bitpulse/core/widgets/custom_more_widget.dart';
 import 'package:flutter/material.dart';
@@ -39,10 +40,14 @@ class DetailsBody extends StatelessWidget {
               color: isFavorite ? Colors.amber : null,
             ),
             onPressed: toggleFavorite,
-            tooltip: isFavorite ? 'Remove from Favorites' : 'Add to Favorites',
+            tooltip: isFavorite
+                ? AppLocalizations.of(context).removed_from_favorites
+                : AppLocalizations.of(context).add_to_favorites,
           ),
         ],
-        title: Text('${cryptoDetails.id!.toUpperCase()} Details'),
+        title: Text(
+          '${cryptoDetails.id!.toUpperCase()} ${AppLocalizations.of(context).details}',
+        ),
         centerTitle: true,
         elevation: 0,
       ),
@@ -72,51 +77,52 @@ class DetailsBody extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0),
                 child: CustomMoreWidget(
-                  text: 'Key Market Metrics',
+                  text: AppLocalizations.of(context).key_maket_metrics,
                   onTap: () {},
                 ),
               ),
               const SizedBox(height: 15),
 
               StaticsCard(
-                title: 'Important Resourcess',
-                t1: 'Homepage URL',
-                t2: 'Subreddit URL',
+                title: AppLocalizations.of(context).impotant_resources,
+                t1: AppLocalizations.of(context).homepage_url,
+                t2: AppLocalizations.of(context).subreddit_url,
                 v1: '${cryptoDetails.links!.homepage?[0]}',
                 v2: "${cryptoDetails.links?.subredditUrl ?? "N/A"} ",
               ),
 
               // Additional Stats Section
-             
+              StaticsCard(
+                title: AppLocalizations.of(
+                  context,
+                ).key_engagement_and_community,
+                t1: AppLocalizations.of(context).sentiment_Votes_Up_Percentage,
+                t2: AppLocalizations.of(
+                  context,
+                ).sentiment_Votes_Down_Percentage,
 
-                StaticsCard(
-                title: 'Key Engagement & Community',
-                t1: 'Sentiment Votes Up Percentage',
-                t2: 'Sentiment Votes Down Percentage',
-              
                 v1: context.read<DetailsCubit>().hasNull(
                   cryptoDetails.sentimentVotesUpPercentage.toString(),
                 ),
                 v2: context.read<DetailsCubit>().hasNull(
                   cryptoDetails.sentimentVotesDownPercentage.toString(),
                 ),
-               
               ),
               StaticsCard(
-                title: 'Watchlist & Categories',
-             
-                t1: 'Watchlist Portfolio Users',
-                t2: 'Categories',
-            
+                title: AppLocalizations.of(context).watchlist_and_categories,
+
+                t1: AppLocalizations.of(context).watchlist_portfolio_users,
+                t2: AppLocalizations.of(context).categories,
+
                 v1: context.read<DetailsCubit>().hasNull(
                   cryptoDetails.watchlistPortfolioUsers.toString(),
                 ),
                 v2: '${cryptoDetails.categories?.join(', ')}',
               ),
               DescriptionWidget(
-                title: 'Description',
+                title: AppLocalizations.of(context).description,
                 description: (cryptoDetails.description?.en == "")
-                    ? "No description available"
+                    ? AppLocalizations.of(context).no_description_available
                     : cryptoDetails.description?.en
                           .toString()
                           .replaceAll(RegExp(r'<[^>]*>'), '')
@@ -131,15 +137,3 @@ class DetailsBody extends StatelessWidget {
     );
   }
 }
-
-
-// class NewWidget extends StatelessWidget {
-//   const NewWidget({
-//     super.key, 
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ;
-//   }
-// }
