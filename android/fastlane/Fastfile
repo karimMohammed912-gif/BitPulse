@@ -1,4 +1,7 @@
 # This file contains the fastlane.tools configuration
+require 'dotenv'
+require 'yaml'
+Dotenv.load(File.expand_path('../../.env', __dir__))
 # You can find the documentation at https://docs.fastlane.tools
 #
 # For a list of all available actions, check out
@@ -32,12 +35,42 @@ platform :android do
 
   desc "Distribute app to Firebase App Distribution"
   lane :firebase_distribute do
-    gradle(task: "clean assembleRelease")
+    # Avoid 'clean' because antivirus/OS may lock files on Windows
+    gradle(task: "assembleRelease")
+
+    # Read version from pubspec.yaml (e.g., 1.2.3+45)
+    pubspec_path = File.expand_path('../../pubspec.yaml', __dir__)
+    version_str = nil
+    begin
+      pubspec = YAML.load_file(pubspec_path)
+      version_str = pubspec['version'] if pubspec && pubspec['version']
+    rescue => e
+      UI.message("[firebase] Could not read version from pubspec.yaml: #{e}")
+    end
+    version_str ||= ENV['FLUTTER_BUILD_NAME'] || 'unknown'
+    notes = "BitPulse v#{version_str}"
+
+    # Resolve APK path dynamically (from android/fastlane to project root is ../../)
+    project_root = File.expand_path('../..', __dir__)
+    candidates = Dir.glob([
+      File.join(project_root, 'build', '**', 'outputs', '**', '*.apk'),
+      File.join(project_root, 'build', 'app', 'outputs', 'flutter-apk', '*.apk'),
+    ]).select { |p| File.file?(p) }
+
+    if candidates.empty?
+      UI.user_error!("No APKs found under #{File.join(project_root, 'build')}. Run 'flutter build apk --release' first.")
+    end
+
+    # Prefer a universal release APK if present
+    preferred = candidates.find { |p| File.basename(p) =~ /app-release(?:-unsigned)?\.apk$/ }
+    apk_abs_path = preferred || candidates.max_by { |p| File.size(p) }
+
     firebase_app_distribution(
       app: "1:953262432976:android:e4bee7bc51470e6ecd74d5",
-      apk_path: "../build/app/outputs/flutter-apk/app-release.apk",
-      testers: "tester-email@email.com",
-      release_notes: "New beta build with latest features and bug fixes"
+      # Use absolute path to avoid Windows relative path issues
+      apk_path: apk_abs_path,
+      testers: ENV['Email_addres'] || "",
+      release_notes: notes
     )
   end
 
