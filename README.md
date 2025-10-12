@@ -2,15 +2,60 @@
 
 BitPulse is a comprehensive cryptocurrency tracking application built with Flutter. It provides real-time data, detailed charts, and portfolio management features to help users monitor the dynamic world of digital currencies.
 
+## App Mockups
+
+### Introduction
+<p align="center">
+  <img src="assets/Mockups/Mockup1.png" alt="App Introduction" width="250"/>
+</p>
+
+### Home Feature
+<p align="center">
+  <img src="assets/Mockups/Mockup2.png" alt="Home Screen 1" width="250"/>
+  <img src="assets/Mockups/Mockup3.png" alt="Home Screen 2" width="250"/>
+</p>
+
+### Details Feature
+<p align="center">
+  <img src="assets/Mockups/Mockup4.png" alt="Coin Details 1" width="250"/>
+  <img src="assets/Mockups/Mockup5.png" alt="Coin Details 2" width="250"/>
+</p>
+
+### Exchange Feature
+<p align="center">
+  <img src="assets/Mockups/Mockup6.png" alt="Currency Exchange 1" width="250"/>
+  <img src="assets/Mockups/Mockup7.png" alt="Currency Exchange 2" width="250"/>
+</p>
+
+### Multi-Language Support
+<p align="center">
+  <img src="assets/Mockups/Mockup8.png" alt="Language Support 1" width="250"/>
+  <img src="assets/Mockups/Mockup9.png" alt="Language Support 2" width="250"/>
+</p>
+
+### Theme Customization
+<p align="center">
+  <img src="assets/Mockups/Mockup10.png" alt="Theme Options 1" width="250"/>
+  <img src="assets/Mockups/Mockup11.png" alt="Theme Options 2" width="250"/>
+</p>
+
+### Advanced Search & Authentication
+<p align="center">
+  <img src="assets/Mockups/Mockup12.png" alt="Advanced Search" width="250"/>
+  <img src="assets/Mockups/Mockup13.png" alt="Authentication" width="250"/>
+</p>
+
 ## Features
 
 - **Real-time Crypto Tracking**: View live prices, market cap, and 24-hour volume for a wide range of cryptocurrencies from the CoinGecko API.
-- **Detailed Coin View**: Dive deep into any cryptocurrency with interactive price charts, historical data, and key market metrics.
-- **User Authentication**: Secure sign-up and login functionality using Firebase Authentication.
+- **Detailed Coin View**: Dive deep into any cryptocurrency with interactive price charts (1D, 7D, 30D, 1Y timeframes), historical data, and key market metrics.
+- **User Authentication & Profiles**: Secure sign-up and login functionality using Firebase Authentication with Google Sign-In support. View your personalized profile with email and user ID.
 - **Personal Watchlist**: Star your favorite cryptocurrencies to keep them in a dedicated watchlist for quick access. Local data persistence is managed using Hive.
-- **Currency Exchange Calculator**: Convert between different cryptocurrencies with up-to-date exchange rates.
-- **Advanced Search**: Quickly find any cryptocurrency by its name or symbol.
+- **Currency Exchange Calculator**: Convert between different cryptocurrencies with up-to-date exchange rates and an intuitive interface.
+- **Advanced Search**: Quickly find any cryptocurrency by its name or symbol with smart suggestions and instant results.
+- **Multi-Language Support**: Access the app in your preferred language with comprehensive internationalization (i18n) support.
 - **Customizable Themes**: Personalize your user experience by choosing from multiple app themes, including light and dark modes.
+- **Data Management**: Take control of your app data with options to clear cache and reset the app to default settings.
 
 ## Tech Stack & Architecture
 
@@ -104,13 +149,6 @@ You can distribute the app to Firebase App Distribution using Fastlane.
     fastlane firebase_distribute
     ```
 
-### Android Deployment via Batch Script
-
-On Windows, you can use the `deploy.bat` script to build the release APK and upload it to Firebase App Distribution.
-
-```bat
-deploy.bat
-```
 
 ## Google Sign‑In (Firebase Auth) Setup
 
